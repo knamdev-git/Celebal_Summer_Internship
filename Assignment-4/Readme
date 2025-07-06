@@ -1,1 +1,16 @@
+Assignment 4 :
 
+Question 1-> 
+============
+Basic commands of docker : 
+  1. docker images - to see the images in docker
+  2. docker pull - to pull any image from system or docker hub
+  3. dokcer run <image-name> - it means to run the image and in this the container generated automatically
+  4. exit : to stop using container anymore.
+  5. docker ps -a : to list all container created or exited.
+  6. docker ps - to see the running container
+  7. docker start <container_name or id> : to start the container.
+  8. docker stop <container> - to stop the container.
+  9. docker rm <container_Name or id> - to remove the container.
+  10. docker rmi <img_name or if> - to remove the image.
+  11. docker network ls - to list all the network.
