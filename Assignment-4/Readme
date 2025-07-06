@@ -14,3 +14,47 @@ Basic commands of docker :
   9. docker rm <container_Name or id> - to remove the container.
   10. docker rmi <img_name or if> - to remove the image.
   11. docker network ls - to list all the network.
+
+Question 2->
+===========
+Build Docker Image from Dockerfile
+
+  Create custom image using a Dockerfile
+  cmd : sudo docker run hello-world
+
+Question 3->
+===========
+Docker Registry, DockerHub, Multi-Stage Builds
+  -> Registry: Image storage system
+  -> DockerHub: Public Docker registry
+  -> Multi-Stage Build: Reduces image size and separates build steps
+Commands : `docker login`, `docker build`, `docker push`
+
+Question 4->
+===========
+Create Docker Image from Running Container
+
+You can create an image from a modified or running container using `docker commit`.
+Useful for saving the state of a container as a reusable image.
+Command:
+  `docker commit <container_id> myimage:v1`
+
+Question 5->
+============
+Push & Pull Image to DockerHub or ACR
+
+Push uploads your image to DockerHub or Azure Container Registry (ACR).
+Pull downloads an image from the registry to your local system.
+Commands:
+  `docker tag myimage username/myimage`
+  `docker push username/myimage`
+  `docker pull username/myimage`
+
+Question 6 -> 
+==========
+Create a Custom Docker Bridge Network
+
+Custom bridge network allows containers to communicate with each other using container names.
+Helps in organizing multi-container applications with better control.
+Command:
+  `docker network create my-network`
